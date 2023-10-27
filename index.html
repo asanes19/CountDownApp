@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" type="image/x-icon" href="favicon.ico" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+        <link rel="stylesheet" href="style.css" />
+
+        <title>Countdown Timer</title>
+    </head>
+
+    <body>
+        <!--************* MAIN CODE ****************-->
+
+        <main class="main">
+            <section class="countdownSection">
+                <div class="countdown">
+                    <h1>Countdown Timer</h1>
+                    <label for="targetDate">Select Target Date and Time</label>
+                    <div class="dateTimePicker">
+                        <i id="datetimeIcon" class="fas fa-calendar-alt"></i>
+                        <input type="text" id="datetime" class="flatpickr" />
+                        <button id="startButton">Start Countdown</button>
+                    </div>
+                    <div class="theCounter">
+                        <div class="counter-item">
+                            <span class="countValue" id="days">00</span>
+                            <span class="counterTitle">Days</span>
+                        </div>
+                        <div class="counter-item">
+                            <span class="countValue" id="hours">00</span>
+                            <span class="counterTitle">Hours</span>
+                        </div>
+                        <div class="counter-item">
+                            <span class="countValue" id="minutes">00</span>
+                            <span class="counterTitle">Minutes</span>
+                        </div>
+                        <div class="counter-item">
+                            <span class="countValue" id="seconds">00</span>
+                            <span class="counterTitle">Seconds</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!--=============== MAIN JS ===============-->
+        <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+        <script src="main.js"></script>
+    </body>
+</html>

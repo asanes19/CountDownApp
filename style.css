@@ -1,0 +1,211 @@
+/*=============== GOOGLE FONTS ===============*/
+@import url("https://fonts.googleapis.com/css2?family=Exo:wght@400;500;600&display=swap");
+
+body {
+    background-color: #111;
+    margin: 0;
+    font-family: "Rubik", sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.main {
+    overflow: hidden;
+}
+
+h1 {
+    font-size: 24px;
+    color: #fff;
+    margin-bottom: 15px;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7);
+}
+
+label {
+    display: block;
+    font-size: 14px;
+    margin: 0 0 10px 0;
+    color: #fff;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7);
+}
+
+i {
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+i:hover {
+    color: #631a28;
+}
+
+/* Style the "Start Countdown" button */
+button {
+    background-color: #000000;
+    color: #fff;
+    border: 2px solid #631a28;
+    padding: 5px 10px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #631a28;
+    border: 2px solid #000000;
+}
+
+.countdownSection {
+    width: 100%;
+    background-image: url(bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.countdown {
+    text-align: center;
+    background-color: rgb(24 9 21 / 50%);
+    padding: 40px;
+    border: 2px solid #631a28;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.dateTimePicker {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+#datetime {
+    padding: 5px 10px;
+    background: rgb(24 9 21 / 50%);
+    border: 2px solid #631a28;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.flatpickr:focus {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.theCounter {
+    color: #e5e5e5;
+    padding: 40px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.counter-item {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 40px;
+    background-color: #631a28;
+    padding: 15px;
+    border-radius: 5px;
+    width: 150px;
+    height: 150px;
+}
+
+.counter-item span {
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+.counterTitle {
+    color: rgb(24 9 21 / 90%);
+    font-size: 25px;
+}
+
+.countValue {
+    font-size: 50px;
+}
+
+/*=============== BREAKPOINTS ===============*/
+
+/* For small devices */
+@media screen and (max-width: 550px) {
+    .theCounter {
+        flex-direction: column;
+    }
+        .dateTimePicker {
+        flex-direction: column;
+    }
+
+}
+
+/* For medium devices */
+@media screen and (min-width: 767px) {
+.theCounter {
+    flex-wrap: wrap;
+}
+    .countdown {
+        height: 100vh;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    button {
+        margin: 10px 0;
+    }
+    .dateTimePicker input {
+        margin: 10px;
+    }
+
+    i {
+        margin-bottom: 5px;
+    }
+
+    .countdown {
+        width: 90%;
+        margin: 25px 0;
+    }
+}
+
+@media screen and (min-width: 1040px) {
+    .theCounter {
+        margin: 60px 0;
+        background-color: rgb(24 9 21 / 90%);
+        border: 2px solid #631a28;
+    }
+    #datetime {
+        margin: 0 10px;
+    }
+
+    .countdown {
+        width: 80%;
+        height: 80%;
+    }
+    .countdownSection {
+        height: 100vh;
+    }
+}
+
+@media screen and (width: 1024px) {
+.countdown {
+    height: 100%;
+    margin: 25px;
+}
+    button {
+        margin: 10px 0;
+    }
+    .dateTimePicker input {
+        margin: 10px;
+    }
+
+    i {
+        margin-bottom: 5px;
+    }
+}
