@@ -56,19 +56,19 @@
 
 ###
 
-<h5 align="left">1. Users can select a target date and time.</h5>
+<p align="left">1. Users can select a target date and time.</p>
 
 ###
 
-<h5 align="left">2. The timer displays the remaining days, hours, minutes, and seconds until the specified time.</h5>
+<p align="left">2. The timer displays the remaining days, hours, minutes, and seconds until the specified time.</p>
 
 ###
 
-<h5 align="left">3. A user-friendly date and time picker is provided using the Flatpickr library.</h5>
+<p align="left">3. A user-friendly date and time picker is provided using the Flatpickr library.</p>
 
 ###
 
-<h5 align="left">4. The application stores the selected date and time in session storage, allowing users to return to their countdown timer.</h5>
+<p align="left">4. The application stores the selected date and time in session storage, allowing users to return to their countdown timer.</p>
 
 ###
 
